@@ -1,0 +1,98 @@
+.botao_aluno{
+	margin-bottom:5px; 	
+}
+.form-pesquisa{
+	margin-top:-10px !important;
+}
+.aluno-div{
+	margin:10px 2%;
+	padding:1%;
+	display:table;
+	width:94%;
+}
+.aluno-div img{
+	float:left;
+	margin-right:10px;
+}
+.div_img_aluno_trab{
+	
+
+}
+.aluno-div p{
+	font-size:17px;
+}
+.aluno-div .descricao{
+	padding:0 50px;
+}
+.infos_adicionais{
+	width:100%;
+	display:table;
+}
+.infos_adicionais section{
+	width:70%;
+	display:table;
+}
+.infos_adicionais header .three{
+	min-width:146px;
+	max-height:120px;
+	overflow:auto;
+}
+.infos_adicionais header .three p{
+	margin:0;
+	padding:0;
+}
+.infos_adicionais header{
+	width:20%;
+	float:left; 
+	display:table;
+}
+
+.infos_adicionais header .three .title{
+	font-weight:bolder;
+}
+.infos_adicionais header .node{
+	margin-left:30px !important;
+	font-size:15px;
+}
+.infos_adicionais section p{
+	float:left; 
+	margin-left:20px;
+}
+.aluno-div .social{
+	float:right;
+	width:40px;
+	
+}
+.aluno-div .social img{
+	margin-bottom:4px; 
+}
+.infos_adicionais footer{
+	float:right;
+	
+}
+.infos_adicionais footer a{
+	margin-bottom:30px;
+}
+.tabela_skills{
+	max-width:70%;
+	margin-left:20px;
+	float:left;
+}
+.tabela_skills .skill{
+	text-align:center;
+}
+.tabela_skills img{
+	float:right;
+	margin-bottom:3px;
+}
+.tabela_skills tr td{
+	padding: 5px 10px;
+}
+.corpoPagina {
+	float:left !important;
+	width:50% !important;
+}
+.enderecamento-modal-body p{
+	margin-top:-20px;
+	
+}
