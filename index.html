@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Unipam PI</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript" ></script> 
+	 <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<style type="text/css">
+		
+		.botao_aluno{
+			margin-bottom:5px; 	
+		}
+		.form-pesquisa{
+			margin-top:-10px !important;
+		}
+		.aluno-div{
+			margin:10px 2%;
+			padding:1%;
+			display:table;
+			width:94%;
+		}
+		.aluno-div img{
+			float:left;
+			margin-right:10px;
+		}
+		.div_img_aluno_trab{
+			
+		
+		}
+		.aluno-div p{
+			font-size:17px;
+		}
+		.aluno-div .descricao{
+			padding:0 50px;
+		}
+		.infos_adicionais{
+			width:100%;
+			display:table;
+		}
+		.infos_adicionais section{
+			width:70%;
+			display:table;
+		}
+		.infos_adicionais header .three{
+			min-width:146px;
+			max-height:120px;
+			overflow:auto;
+		}
+		.infos_adicionais header .three p{
+			margin:0;
+			padding:0;
+		}
+		.infos_adicionais header{
+			width:20%;
+			float:left; 
+			display:table;
+		}
+		
+		.infos_adicionais header .three .title{
+			font-weight:bolder;
+		}
+		.infos_adicionais header .node{
+			margin-left:30px !important;
+			font-size:15px;
+		}
+		.infos_adicionais section p{
+			float:left; 
+			margin-left:20px;
+		}
+		.aluno-div .social{
+			float:right;
+			width:40px;
+			
+		}
+		.aluno-div .social img{
+			margin-bottom:4px; 
+		}
+		.infos_adicionais footer{
+			float:right;
+			
+		}
+		.infos_adicionais footer a{
+			margin-bottom:30px;
+		}
+		.tabela_skills{
+			max-width:70%;
+			margin-left:20px;
+			float:left;
+		}
+		.tabela_skills .skill{
+			text-align:center;
+		}
+		.tabela_skills img{
+			float:right;
+			margin-bottom:3px;
+		}
+		.tabela_skills tr td{
+			padding: 5px 10px;
+		}
+		.corpoPagina {
+			float:left !important;
+			width:50% !important;
+		}
+		.enderecamento-modal-body p{
+			margin-top:-20px;
+			
+		}
+	</style>
+</head>
+
+  <body>
+  
+
+		<div class="navbar">
+		  <div class="navbar-inner">
+			<div class="container text-center ">
+		 
+			  
+			  <img    src="img/logo_unipam.png"   class="img-rounded unipam_logo"  />
+			  <div class="container">
+				
+				<a class="btn btn-info btn-mini botao_aluno " href="area_aluno.html"><i class="icon-user icon-white"></i> Área do Aluno </a>
+			  </div>
+			  
+		 
+			</div>
+			
+		  </div>
+		  <section class="text-center">
+			
+			<form class="btn-info">
+			  <fieldset >
+				<legend class="btn-warning">Pesquisa De Alunos </legend> 
+				<select>
+				  <option value="1">Tipo 1</option>
+				  <option value="2">Tipo 2</option>
+				  <option value="3">Tipo 3</option>
+				  <option value="4">Tipo 4</option>
+				</select>
+				
+				<input type="text" placeholder="palavra-chave">
+				
+				<button type="submit" class="btn btn-primary  btn-small form-pesquisa"><i class="icon-search"></i> Pesquisar</button>
+				
+				<legend></legend>
+			  </fieldset>
+			</form>
+			
+			<div class="hero-unit aluno-div text-left img-polaroid">
+			  <div class="social">
+			  
+				  <a href="#" title="Google +"> 
+					<img src="img/soc_google+.png">
+				  </a>
+				  
+				  <a  href="#" title="Facebook">
+					<img src="img/soc-facebook.png">
+				  </a href="#">
+				  
+				  <a href="#" title="LinkDin">
+					<img src="img/soc-linkdin.png">
+				  </a>
+				  
+				  <a href="#" title="Twitter">
+				  <img src="img/soc-twitter.png">
+				  </a>
+				  
+			  </div>
+			  <div class="div_img_aluno_trab">
+				<img width="200" src="img/avatar.jpg" class="img-polaroid" />
+			  </div>
+			  <h2>Pedro Henrique Silva Fernandes</h2>
+			  
+			  <p class="descricao">Lorem ipsum dol sit amet, viverra diam. Duis suscipit id enim id interdum. Ut placerat euismod velit a faucibus. Ut auctor odio at dui ullamcorper, 
+			  sed adipiscing metus imperdiet. Morbi blandit imperdiet tortor, et tempus ante suscipit eu. Praesent in arcu a elit egestas dapibus. Aliquam viverra, 
+			  lorem eu adipiscing fermentum, nisi mi laoreet odio, et blandit eros nisi congue nunc. Nunc elementum, risus non malesuada semper, nisl orci commodo leo,
+			  ac mattis urna nulla vitae lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent consectetur tortor varius ipsum
+			  blandit, eget mattis massa rhoncus. Nam id faucibus felis.</p>
+			  
+			  
+			  <section class="infos_adicionais"> 
+					<header>
+						<div class="three">
+							<p class="title"><i class="icon-folder-open"></i> Trabalhos<p>
+							<p class="node"><i class="icon-file"></i><a href="#">Trabalho 1 , este e um teste de tamanho</a><p>
+							<p class="node"><i class="icon-file"></i><a href="#">Trabalho 1</a><p>
+							<p class="node"><i class="icon-file"></i><a href="#">Trabalho 1</a><p>
+							<p class="node"><i class="icon-file"></i><a href="#">Trabalho 1</a><p>
+							<p class="node"><i class="icon-file"></i><a href="#">Trabalho 1</a><p>
+							<p class="node"><i class="icon-file"></i><a href="#">Trabalho 1</a><p>
+						</div>
+					</header>
+					<section >
+						<p>Emprego Atual: <span><strong> Desempregado </strong></span> </p>
+						<p>Interesses: <span><strong> Web, Java, Desenvolvimento Agil, Robótica </strong></span> </p>
+						<p>Ultima Atuação: <span><strong> Desenvolvimento de Website </strong></span> </p>
+					</section> 
+					<section class="corpoPagina">
+						
+						<table class="table table-condensed tabela_skills">
+						 <tr class="danger">
+							<td>Competências</td>
+							<td>Recomendações</td>
+						  </tr>
+						  <tr class="success">
+							<td class="skill">PHP</td>
+							<td>
+								<a href="#joseModal" title="José" data-toggle="modal" >
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="joseModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">José</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de josé</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+								<a href="#henriqueModal" title="José" data-toggle="modal">
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="henriqueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">Henrrique</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de Henrique</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+								
+							</td>
+							 <tr class="success">
+							<td class="skill">POO</td>
+							<td>
+								<a href="#joseModal" title="José" data-toggle="modal" >
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="joseModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">José</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de josé</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+								<a href="#henriqueModal" title="José" data-toggle="modal">
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="henriqueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">Henrrique</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de Henrique</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+								<a href="#henriqueModal" title="José" data-toggle="modal">
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="henriqueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">Henrrique</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de Henrique</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+								<a href="#henriqueModal" title="José" data-toggle="modal">
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="henriqueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">Henrrique</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de Henrique</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+								<a href="#henriqueModal" title="José" data-toggle="modal">
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="henriqueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">Henrrique</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de Henrique</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+								<a href="#henriqueModal" title="José" data-toggle="modal">
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="henriqueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">Henrrique</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de Henrique</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+
+								
+								
+							</td>
+							
+							 <tr class="success">
+							<td class="skill">Java</td>
+							<td>
+								<a href="#joseModal" title="José" data-toggle="modal" >
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="joseModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">José</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de josé</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+								<a href="#henriqueModal" title="José" data-toggle="modal">
+								<img width="30" src="img/avatar.jpg" class="img-circle" />
+								
+								</a>
+								<!-- Modal Jose-->
+								<div id="henriqueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h3 id="myModalLabel">Henrrique</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Aqui vai informações de Henrique</p>
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+								  </div>
+								</div>
+								
+								
+							</td>
+						  </tr>
+						  
+						</table>
+						
+						
+						
+						
+						
+					</section>
+					<footer>
+							<a href="#pedroHenriqueModal" data-toggle="modal" id="curriculum" class="btn btn-success botao-curriculum"><i class="icon-folder-close"></i> Ver Curriculum</a>
+							
+							
+							<!-- Modal Jose-->
+							<div id="pedroHenriqueModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h3 id="myModalLabel">Curriculum Vitae Pedro Henrique</h3>
+							  </div>
+							  <div class="modal-body">
+								<div class="div_img_aluno_trab">
+									<img width="90" src="img/avatar.jpg" class="img-polaroid" />
+								  </div>
+								  <div class="enderecamento-modal-body">
+									  <h2>Pedro Henrique Silva Fernandes</h2>
+									  <p><b>Endereço: </b><small> Rua Espirito Santo 1010 </small> </p>
+									  <p><b>Bairro: </b><small> Santa Terezinha </small> </p>
+									  <p><b>CEP:  </b><small> 28321723 </small> </p>
+								  </div>
+								  <p><b>Telefone:</b>(34) 9196-3965 <b>  E-mail:</b>pedrohsf93@hotmail.com<p> 
+								  
+								  <ul class="nav nav-tabs" id="myTab">
+									  <li><a href="#objetivo">Objetivo</a></li>
+									  <li><a href="#experiencia_profissional">Experiências Profissionais</a></li>
+									  <li><a href="#formacao">Formação</a></li>
+									  <li>
+										<div class="tab-content">
+								  <div class="tab-pane" id="objetivo">Seguir uma carreira na área de ensino, </div>
+								  <div class="tab-pane" id="experiencia_profissional">Empresa x - Fazendo x coisas </div>
+								  <div class="tab-pane" id="formacao">Formação 1 - concluido</div>
+								</div>
+								 
+									  </li>
+									</ul>
+						 
+								
+								<script>
+								  $('#myTab a[href="#objetivo"]').tab('show');
+								  $('#myTab a').click(function (e) {
+									  e.preventDefault();
+									  $(this).tab('show');
+									})
+								</script>
+								  
+								  
+								  
+							  </div>
+							  
+							  <div class="modal-footer">
+								<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+							  </div>
+							</div>
+						
+							
+							<p><i class="icon-envelope"></i> Email : email_exemple@email.com.br<p>
+							<p><i class="icon-globe"></i> Endereço : Rua Alguma Teste<p>
+					</footer>
+					
+			  </section>
+			</div>
+				
+			
+		  </section>
+		  
+		  
+		</div> 
+		
+		
+		
+	
+	
+	
+	
+   
+  </body>
+</html> 
+
+<script type="text/javascript"> 
+	 /* --inicio-- script troca class para troca de icone no botão "Ver Curriculum" */
+	 var icon_curriculum_open = "icon-folder-open";
+	 var icon_curriculum_close = "icon-folder-close";
+	$(window).ready(function(){
+		$(".botao-curriculum").mouseenter(function(){
+
+				$(".botao-curriculum i").removeClass(icon_curriculum_close);
+				$(".botao-curriculum i").addClass(icon_curriculum_open);
+		
+		});
+		$(".botao-curriculum").mouseleave(function(){
+				$(".botao-curriculum i").removeClass(icon_curriculum_open);
+				$(".botao-curriculum i").addClass(icon_curriculum_close);
+		
+		});
+	});
+		/* -- fim -- script troca class para troca de icone no botão "Ver Curriculum" */
+</script>
