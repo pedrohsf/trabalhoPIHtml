@@ -88,10 +88,10 @@ CREATE  TABLE IF NOT EXISTS `alunos_si_bd`.`users` (
   `username` VARCHAR(255) NOT NULL ,
   `password` VARCHAR(255) NOT NULL ,
   `role` VARCHAR(30) NOT NULL ,
-  `nome` VARCHAR(60) NOT NULL ,
+  `name` VARCHAR(60) NOT NULL ,
   `email` VARCHAR(255) NOT NULL ,
-  `objetivo` TEXT NULL ,
-  `telefone` BIGINT NULL ,
+  `goal` TEXT NULL ,
+  `telephone` BIGINT NULL ,
   `created` DATETIME NULL ,
   `modified` DATETIME NULL ,
   `address_id` INT NOT NULL ,
@@ -211,10 +211,10 @@ DROP TABLE IF EXISTS `alunos_si_bd`.`recommendations` ;
 
 CREATE  TABLE IF NOT EXISTS `alunos_si_bd`.`recommendations` (
   `user_id` INT NOT NULL ,
-  `skills_users_user_id` INT NOT NULL ,
-  `skills_skill_id` INT NOT NULL ,
-  PRIMARY KEY (`user_id`, `skills_users_user_id`, `skills_skill_id`) ,
-  INDEX `fk_users_has_skills_users_skills_users1_idx` (`skills_users_user_id` ASC, `skills_skill_id` ASC) ,
+  `recommendation_user_id` INT NOT NULL ,
+  `recommendation_skill_id` INT NOT NULL ,
+  PRIMARY KEY (`user_id`, `recommendation_user_id`, `recommendation_skill_id`) ,
+  INDEX `fk_users_has_skills_users_skills_users1_idx` (`recommendation_user_id` ASC, `recommendation_skill_id` ASC) ,
   INDEX `fk_users_has_skills_users_users1_idx` (`user_id` ASC) ,
   CONSTRAINT `fk_users_has_skills_users_users1`
     FOREIGN KEY (`user_id` )
@@ -222,7 +222,7 @@ CREATE  TABLE IF NOT EXISTS `alunos_si_bd`.`recommendations` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_users_has_skills_users_skills_users1`
-    FOREIGN KEY (`skills_users_user_id` , `skills_skill_id` )
+    FOREIGN KEY (`recommendation_user_id` , `recommendation_skill_id` )
     REFERENCES `alunos_si_bd`.`skills_users` (`user_id` , `skill_id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
